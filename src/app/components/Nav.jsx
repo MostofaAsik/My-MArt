@@ -49,7 +49,7 @@ const Nav = () => {
                             (data?.user?.role === "admin" ||
                                 data?.user?.role === "super-admin") && (
                                 <li>
-                                    <Link href="/admin">Admin</Link>
+                                    <Link href="/dashboard/admin">Admin</Link>
                                 </li>
                             )}
                         <li>
