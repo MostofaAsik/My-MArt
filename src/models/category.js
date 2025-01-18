@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import uniqueValidator from "mongoose-unique-validator";
+
 
 const categorySchema = new mongoose.Schema(
     {
@@ -15,7 +15,7 @@ const categorySchema = new mongoose.Schema(
     { timestamps: true },
 );
 
-categorySchema.plugin(uniqueValidator, " is already taken.");
+
 
 export default mongoose?.models?.Category ||
     mongoose.model("Category", categorySchema);
