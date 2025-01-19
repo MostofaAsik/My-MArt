@@ -23,23 +23,11 @@ const Nav = () => {
                         </li>
 
                         <li>
-
-                        </li>
-                        <li>
                             <Link href="/cart" className="hover:text-blue-400">
                                 Cart
                             </Link>
                         </li>
-                        <li>
-                            <Link href="/static-page" className="hover:text-blue-400">
-                                Static Page
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/add-product" className="hover:text-blue-400">
-                                Add Product
-                            </Link>
-                        </li>
+
                         <li>
                             <Link href="/shop" className="hover:text-blue-400">
                                 Shop
@@ -54,7 +42,7 @@ const Nav = () => {
                             (data?.user?.role === "admin" ||
                                 data?.user?.role === "super-admin") && (
                                 <li>
-                                    <Link href="/dashboard/admin">Admin</Link>
+                                    <Link href="/dashboard/admin/add-product">Add Product</Link>
                                 </li>
                             )}
                         <li>

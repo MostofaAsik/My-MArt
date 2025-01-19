@@ -6,6 +6,7 @@ import { priceRanges } from "@/utils/filteredData";
 
 export default function ProductFilter({ searchParams }) {
     const [categories, setCategories] = useState([]);
+    console.log(categories);
     const pathname = "/shop";
     const params = useSearchParams();
 
@@ -142,7 +143,7 @@ export default function ProductFilter({ searchParams }) {
                 <p className="font-semibold text-lg mb-3">Categories</p>
                 <div className="flex flex-wrap gap-2">
                     {categories?.map((c) => {
-                        const isActive = category === c._id;
+                        const isActive = params.get("category") === c._id;
 
                         return (
                             <div key={c._id} className="flex items-center">
@@ -169,6 +170,7 @@ export default function ProductFilter({ searchParams }) {
                     })}
                 </div>
             </div>
+
         </div>
     );
 }
