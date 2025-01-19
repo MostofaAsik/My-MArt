@@ -16,7 +16,8 @@
     "query-string": "^9.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-toastify": "^11.0.3"
+    "react-toastify": "^11.0.3",
+    "stripe": "^17.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
